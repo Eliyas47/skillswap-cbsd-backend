@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-router = APIRouter()
+router = APIRouter(prefix="/auth", tags=["Auth"])
 
 @router.get("/")
-def test_auth():
-    return {"message": "Auth component working"}
+def auth_test():
+    return {"message": "Auth component initialized"}
