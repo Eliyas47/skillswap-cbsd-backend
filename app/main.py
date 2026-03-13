@@ -26,3 +26,7 @@ def root():
 from app.components.skill.router import router as skill_router
 
 app.include_router(skill_router, prefix="/skill", tags=["Skill"])
+
+from app.components.swap.router import router as swap_router
+
+app.include_router(swap_router, prefix="/swap", tags=["Swap"])
