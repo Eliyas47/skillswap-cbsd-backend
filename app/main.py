@@ -33,3 +33,7 @@ app.include_router(swap_router, prefix="/swap", tags=["Swap"])
 from app.components.chat.router import router as chat_router
 
 app.include_router(chat_router, prefix="/chat", tags=["Chat"])
+
+from app.components.rating.router import router as rating_router
+
+app.include_router(rating_router, prefix="/rating", tags=["Rating"])
